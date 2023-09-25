@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111827;
+    color: white;
+}
+
+img[alt="hambrger-image"]{
+    height: 45px;
+    display: none;
+}
+
+img[alt="waving-hand"] {
+    height: 20px;
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    /* align-items: center; */
+    gap: 20px;
+    margin: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+.home-option{
+    padding: 5px 10px;
+    background-color: rgb(100, 100, 224);
+    border-radius: 15px;
+}
+
+.intro{
+    /* max-width: 100vw; */
+    margin: 20px;
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+}
+
+img[alt="pc"]{
+    width: 30vw;
+}
+
+.intro-1{
+    display: flex;
+    gap: 10px;
+    font-size: 30px;
+    align-items: center;
+}
+
+.intro-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+}
+
+.intro-2 h1{
+    font-size: 60px;
+}
+
+.intro-2 h2{
+        font-size: 35px;
+        color: rgb(197, 197, 89);
+}
+
+img[alt="image"]{
+    width: 20vw;
+}
+
+
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img[alt="social"]{
+    width: 30px;
+}
+
+.contact{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact div h1{
+    font-size: 40px;
+}
+
+.horizontal{
+    height: 10px;
+    width: 200px;
+    background-color: blue;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.project div h1{
+    font-size: 40px;
+}
+
+.horizontal-divider{
+    height: 10px;
+    width: 135px;
+    background-color: blue;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.project-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+     column-gap: 20px; 
+}
+
+@media screen and (max-width: 576px) {
+    nav ul{
+        display: none;
+    }
+
+    img[alt="hambrger-image"]{
+        display: block;
+    }
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    img[alt="pc"]{
+        width: 60vw;
+    }
+    
+    .intro-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+    }
+    
+
+    .intro-2 h1{
+        font-size: 40px;
+    }
+    .intro-2 h2{
+        font-size: 25px;
+        text-align: center;
+    }
+    .project-list{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 20px; 
+    }
+
+    img[alt="image"]{
+        width: 55vw;
+    }
+    .project div h1{
+        font-size: 35px;
+    }
+    .contact div h1{
+        font-size: 35px;
+    }
+   
+
+    .horizontal{
+        height: 10px;
+        width: 180px;
+        background-color: blue;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    .horizontal-divider{
+        width: 130px;
+    }
+}
+
+
